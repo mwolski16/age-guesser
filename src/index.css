@@ -1,13 +1,87 @@
-body {
+* { 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+html
+{
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.App--wrapper
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45vh;
+}
+
+.App--dates
+{
+  display: flex;
+ 
+  justify-content: space-around;
+}
+.App--question
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 25px;
+}
+
+
+.dates--text
+{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 10px 0 10px;
+  
+}
+.dates--buttons
+{
+  margin: 0px;
+  padding: 0 10px 0 10px;
+  max-height: 5vh;
+  min-width: 2vw;
+}
+
+.dates--correct
+{
+  margin-top: 20px;
+}
+.App--congrats
+{
+  margin: 10px 0 0 0;
+}
+.App--guessedDates
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.8vh;
+  margin: 0 10px 0 10px;
+  min-width: 150px;
+  text-align: right;
+  
+}
+
+.datesRight
+{
+  text-align: left;
+}
+.datesLeft
+{
+  text-align: right;
 }
